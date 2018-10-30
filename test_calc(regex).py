@@ -28,7 +28,6 @@ def calculo():
 #Valida a entrada de caracteres
 padrao = r'(-?\d+)([-+x/])(-?\d+)'
 
-
 parametro = (''.join(sys.argv[1:]))
 try:
 
