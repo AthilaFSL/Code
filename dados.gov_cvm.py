@@ -37,8 +37,8 @@ for i in range(1, len(conjuntos) + 1):
         with open("D:\CVM\\" + nomeConjunto + "\\" + nomeConjunto + ".txt", "a") as text_file:
         text_file.write(link + "\n")
     driver.back()
-
-    #Acessa o wget
+    
+    
     os.system('wget -i "D:\CVM\\{}\\{}.txt" -P "D:\CVM2\\{}\\{}"'.format(nomeConjunto, nomeConjunto, nomeConjunto, nomeConjunto))
 
     dir = 'D:\\CVM\\{}\\{}'.format(nomeConjunto, nomeConjunto)
