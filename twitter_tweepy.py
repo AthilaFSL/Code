@@ -14,6 +14,7 @@ name = "kblock43"
 tweetCount = 10
 results = api.user_timeline(id=name, count=tweetCount, tweet_mode='extended')
 
+#Varre a lista de tweets
 for tweet in results:
     print("___________________________________________________________________________________________________________")
     print(tweet.created_at)
@@ -25,6 +26,7 @@ for tweet in results:
 query = "#kblock43"
 results = api.search(q=query, count=20,  tweet_mode='extended')
 
+#Varre a lista de tweets
 for tweet in results:
     print("___________________________________________________________________________________________________________")
     print(tweet.created_at)
